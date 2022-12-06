@@ -7,49 +7,87 @@
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <link rel="shortcut icon" href="https://i.postimg.cc/k45mq6Nv/skateman.jpg" type="image/x-icon">
-<link rel="stylesheet" href="./styles/style.css">
+<link rel="stylesheet" href="../styles/style.css">
     <title>Products</title>
 </head>
 <body>
+
+  <!-- navbar -->
     <header>
         <nav class="navbar bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="../index.html">Home</a>
-            <a class="navbar-brand text-light" href="./html/products.html">Products</a>
-            <a class="navbar-brand text-light" href="./html/admin.html">Admin</a>
-            <a class="navbar-brand text-light" href="./html/checkout.html">Checkout</a>
+            <a class="navbar-brand text-light" href="./products.html">Products</a>
+            <a class="navbar-brand text-light" href="../html/admin.html">Admin</a>
+            <a class="navbar-brand text-light" href="../html/checkout.html">Checkout</a>
         </div>
       </nav>
     </header>
 
-    <h2 class="text-center">Products</h2>
-    <button id="filter-btn1">Penny</button>
-    <button id="filter-btn2">Skateboard</button>
-    <button id="filter-btn3">Longboard</button>
-
-    <div class="card-group">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-        </div>
-      </div>
+    <br><h2 class="text-center">Products</h2><br>
+    <p class="text-center">Select category:</p>
+    <div class="text-center">
+      <button class="all-btn">Show All</button>
+      <button id="filter-btn1">Penny</button>
+      <button id="filter-btn2">Skateboard</button>
+      <button id="filter-btn3">Longboard</button>
+    </div><br>
     
+    <div class="products"></div>
+    <!-- <div class="card-group">
+        <div class="card">
+          <img src="https://i.postimg.cc/tC9Fzw88/pennyblackout.jpg" class="card-img-top w-50 mx-auto" alt="penny1">
+          <div class="card-body text-center">
+            <h5 class="card-title text-center">Penny Blackout</h5>
+            <p class="card-text text-center">R1200.00</p>
+            <button class="w-25">Buy</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.postimg.cc/vZk3znC4/birdhouseskateboard-stage-3.jpg" class="card-img-top w-50 mx-auto" alt="skateboard1">
+          <div class="card-body text-center">
+            <h5 class="card-title text-center">BIRDHOUSE Skateboard Stage 3</h5>
+            <p class="card-text text-center">R1300.00</p>
+            <button class="w-25">Buy</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.postimg.cc/KYMgqjR0/Sector-9-Fault-Line-Curl-39-5-Longboard-Complete-356967-front-US-1.webp" class="card-img-top w-50 mx-auto" alt="longboard1">
+          <div class="card-body text-center">
+            <h5 class="card-title text-center">Sector 9 Fault Line Curl Longboard</h5>
+            <p class="card-text text-center">R3500.00</p>
+            <button class="w-25">Buy</button>
+          </div>
+        </div>
+      </div><br>
+      <div class="card-group">
+        <div class="card">
+          <img src="https://i.postimg.cc/NFdhr1vF/7-25-Skull-Mini-Blue-teste.png" class="card-img-top w-75 mx-auto" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-center">BIRDHOUSE Tony Hawk Oversized Skull Mini Skateboard</h5>
+            <p class="card-text text-center">R1300.00</p>
+            <button class="w-25">Buy</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.postimg.cc/JzMQbzRD/elementboard.png" class="card-img-top w-50 mt-5 mx-auto" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-center">Element Section Skateboard</h5>
+            <p class="card-text text-center">R1300.00</p>
+            <button class="w-25">Buy</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://i.postimg.cc/jdfY9Z00/s9-bambino-shorebreak.jpg" class="card-img-top w-50 mt-5 mx-auto" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title text-center">Sector 9 Bambino Shorebreak Longboard</h5>
+            <p class="card-text text-center">R2500.00</p>
+            <button class="w-25">Buy</button>
+          </div>
+        </div>
+      </div> -->
+      <footer class="text-center mt-2">Designed by Mu-een Slamat &copy; 2022</footer>
+
+      <script src="../js/code.js"></script>
 </body>
 </html>

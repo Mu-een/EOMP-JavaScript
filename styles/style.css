@@ -5,15 +5,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* body */
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* navbar */
+
 
 /* landing page */
-.landing-page {
-    width: 50vw;
-    height: auto;
-    object-fit: cover;
+.home {
+    margin: 111px;
+}
+.skateman {
+    width: 223px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 /* products page */
+#filter-btn1, #filter-btn2 , #filter-btn3, .all-btn {
+    width: 10vw;
+}
+#filter-btn1:hover, #filter-btn2:hover , #filter-btn3:hover, .all-btn:hover {
+    background-color: wheat;
+}
 
+.products {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    box-shadow: 5px 4px 4px black;
+}
 /* admin page */
 
 /* checkout page*/
