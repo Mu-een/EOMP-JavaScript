@@ -45,24 +45,24 @@ JSON.parse(localStorage.getItem('products ')) : [
     }
 ];
 
-function sampleData () {
+// admin table
+
+function tableProducts () {
     products.forEach((products)=>{
-        document.querySelector('.products').innerHTML += `
-        <div class="card text-center" style="width: 18rem;">
-  <img src="${products.image}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center">${products.productName}</h5>
-    <p class="card-text text-center">Type: ${products.type}</p>
-    <p class="card-text text-center">${products.price}</p>
-    <button class="w-50 buy-btn" onclick="buyButton()">Buy</button>
-  </div>
-</div>`
+        document.querySelector('.tbody').innerHTML += `
+        <tr>
+            <td class="id">${products.id}</td>
+            <td>${products.productName}</td>
+            <td>${products.type}</td>
+            <td>${products.price}</td>
+            <td><button class="w-75 edit-btn">Edit</button></td>
+            <td><button class="w-75 del-btn" onclick="deleteRow()">Delete</button></td>
+        </tr>`
     })
 }
-sampleData();
+tableProducts();
 
-//when pressing 'buy' button
-function buyButton (){
-    alert("Added to Checkout!")
-    location.replace('../html/checkout.html')
+// delete row in table
+function deleteRow(){
+    document.getElementById("tbody").deleteRow(products)
 }

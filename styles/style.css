@@ -5,10 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* body */
 body {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #B2B2B2;
 }
+
 /* navbar */
 
 
@@ -22,13 +25,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    border-radius: 50px;
 }
+
 /* products page */
 #filter-btn1, #filter-btn2 , #filter-btn3, .all-btn {
     width: 10vw;
 }
 #filter-btn1:hover, #filter-btn2:hover , #filter-btn3:hover, .all-btn:hover {
-    background-color: wheat;
+    background-color: grey;
 }
 
 .products {
@@ -37,8 +42,24 @@ body {
 }
 
 .card {
-    box-shadow: 5px 4px 4px black;
+    box-shadow: 5px 5px 5px black;
 }
+
+.buy-btn:hover {
+    background-color: grey;
+}
+
+
 /* admin page */
+.del-btn:hover {
+    background-color: grey;
+}
+
+.edit-btn:hover {
+    background-color: grey;
+}
+.sort-btn:hover {
+    background-color: grey;
+}
 
 /* checkout page*/
