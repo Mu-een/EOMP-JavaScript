@@ -1,6 +1,6 @@
 // sample data
-let products = JSON.parse(localStorage.getItem('products ')) ?
-JSON.parse(localStorage.getItem('products ')) : [
+let products = JSON.parse(localStorage.getItem('products')) ?
+JSON.parse(localStorage.getItem('products')) : [
     {
         id: 1,
         image:"https://i.postimg.cc/tC9Fzw88/pennyblackout.jpg",
@@ -61,8 +61,12 @@ function sampleData () {
 }
 sampleData();
 
+
 //when pressing 'buy' button
 function buyButton (){
     alert("Added to Checkout!")
-    location.replace('../html/checkout.html')
 }
+
+// local storage
+localStorage.setItem('products',JSON.stringify(products));
+localStorage.getItem('products')
