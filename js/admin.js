@@ -55,7 +55,7 @@ function tableProducts () {
             <td>${products.type}</td>
             <td>${products.price}</td>
             <td><button class="w-75 edit-btn">Edit</button></td>
-            <td><button class="w-75 del-btn" onclick="deleteRow()">Delete</button></td>
+            <td><button class="w-75 del-btn" id="deleteBtn" onclick="deleteRow(${products.id})">Delete</button></td>
         </tr>`
     })
 }
@@ -63,21 +63,18 @@ tableProducts();
 
 // delete row in table
 function deleteRow(){
-    document.getElementById("tbody").deleteRow(0);
+    document.querySelector('.tbody').innerHTML += ``
+    localStorage.setItems('products',JSON.stringify(products));
+    // document.querySelector('#deleteBtn');
+    let products = JSON.parse(localStorage.getItem('products'));
+    products.splice(id, 1);
+    localStorage.setItem('products',JSON.stringify(products));
 }
+
 
 // local storage
 localStorage.setItem('products',JSON.stringify(products));
 localStorage.getItem('products')
 
 // sort button
-const sortButton = document.querySelector('#sort-btn')
-sortButton.addEventListener('click',()=>{
-    sort()
-})
 
-function sort(){
-    products.all = products.all.sort((a,b)=>{
-        
-    })
-}
