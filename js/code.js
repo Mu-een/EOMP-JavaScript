@@ -61,7 +61,6 @@ function sampleData () {
 }
 sampleData();
 
-
 //when pressing 'buy' button
 function buyButton (){
     alert("Added to Checkout!")
